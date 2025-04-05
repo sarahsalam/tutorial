@@ -27,8 +27,8 @@ export const FoodImage = ()=>{
     return(
         <>
         <div className="flex flex-col gap-10 justify-center items-center bg-gray-100">
-            <Link href="/" className="flex text-gray-800 font-semibold text-lg hover:bg-gray-600">Back</Link>
-            <Image className="flex p-10" fill src={image}  alt="jhdsa"/>    
+            <Link href="/" className="flex p-3 text-gray-800 font-semibold text-lg hover:bg-gray-600 hover:text-white">Back</Link>
+            <Image className="flex p-10" width={500} height={500} src={image}  alt="jhdsa"/>    
             
         </div>        
         </>
