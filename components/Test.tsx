@@ -1,8 +1,8 @@
 'use client'
 
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react"
-import { PassThrough } from "stream";
 
 export default function Test () {
 
@@ -14,7 +14,7 @@ export default function Test () {
         address:""
     });
 
-
+    const router = useRouter()
     
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
@@ -60,6 +60,7 @@ export default function Test () {
         <input name="date" className="px-3 py-2 border border-gray-300 rounded m-2 " type="date" value={formData.date} onChange={handleChange}/>
     </div>
 
+    <button className="px-4 py-2 bg-red-900 text-white font-semibold rounded m-3" onClick={()=>{router.push('/food');}} >Food</button>
     <Link href="/food" className="px-4 py-2 bg-green-900 text-white font-semibold rounded m-3">Go to Food</Link>
     
     </>
