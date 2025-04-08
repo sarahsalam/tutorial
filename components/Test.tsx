@@ -60,7 +60,7 @@ export default function Test() {
 
         <div>
             <label> Enter name: </label>
-            <input name="name" className="px-3 py-2 border border-gray-300 rounded m-2" type="text" value={formData.name} onChange={handleChange} />
+            <input name="name" className="font-sans px-3 py-2 border border-gray-300 rounded m-2" type="text" value={formData.name} onChange={handleChange} />
         </div>
 
         <div>
